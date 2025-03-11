@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import System from './system'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import System from './System'
+import Navigation from './Navigation.jsx'
+
+
+
+import {BrowserRouter, Routes, Route,} from 'react-router-dom'
 
 function App() {
   
@@ -9,8 +13,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <Navigation></Navigation>
       <Routes>
-        <Route path='/register' element={<system/>} ></Route>
+        <Route path ='/system' element ={<System />}/ >
       </Routes>
       </BrowserRouter>
     </div>
