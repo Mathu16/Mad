@@ -1,0 +1,95 @@
+.main {
+    width: 1000px;
+    height: 150vh;
+    background-image: url('.assets/images/image1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.r1 {
+    width: 900px;
+    height: auto;
+    background-color: rgba(248, 248, 248, 0.8);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.room-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.room-details h3, .room-details p {
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 10px; /* Adds space between price and button */
+}
+
+.book-room-btn {
+    background-color: #860909;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+}
+
+.book-room-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.book-room-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.book-room-btn:active {
+    background-color: #388e3c;
+    transform: scale(1);
+}
+
+.r1 .book-room-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
